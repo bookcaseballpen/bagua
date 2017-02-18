@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<input ng-model="input" maxlength="6"/>
+<button ng-click="convert()">查询</button>
+<p>
+  卦号：{{output.sn}}
+</p>
+<p>
+  卦象：{{output.title}}
+</p>
+<p>
+  数字序：{{output.order}}
+</p>
+<p>
+  卦象：{{output.yinyang}}
+</p>
+<p>
+  吉凶：{{output.luck}}
+</p>
+<p>
+  寓意：{{output.desc}}
+</p>
+<script src="./main.js"></script>
+</body>
+</html>
